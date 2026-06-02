@@ -180,3 +180,212 @@ header{
     width: 100%;
     height: 1px;
 }
+
+/*-------------------------------HOME-------------------------------*/
+
+.home{
+    display: flex;
+    justify-content: center;
+}
+
+.home-title{
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ubuntu-reg';
+    color: var(--brand2);
+    font-size: 5.8rem;
+    font-weight: 500;
+}
+
+.home-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-content > div{
+    flex: 1;
+}
+
+.bio-box-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26rem;
+    height: 42rem;
+    border: 3px solid var(--white);
+    border-top-left-radius: 11rem;
+    border-bottom-right-radius: 11rem;
+    padding: 2rem;
+    box-shadow: -4px -4px 2px var(--brand1);
+}
+
+.bio-box > img {
+    width: 8rem;
+}
+
+.bio-name{
+    font-family: 'IBM-med';
+    color: var(--white);
+    margin-top: 0.8rem;
+    font-size: 2.2rem;
+}
+
+.bio-job{
+    font-family: 'IBM-reg';
+    font-size: 1.1rem;
+    color: var(--white);
+    margin-top: 0.4rem;
+}
+
+.bio-ul{
+    list-style: none;
+    color: var(--white);
+    font-family: 'IBM-reg';
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+.bio-ul > li{
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.bio-ul > li > span{
+    margin-left: 1rem;
+}
+
+.bio-skills{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--bg1);
+    font-family: 'IBM-reg';
+    margin-top: 1rem;
+}
+
+.bio-skills > li{
+    padding: 0 0.8rem;
+    background-color: var(--brand1);
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.bio-btn{
+    background-color: var(--white);
+    margin-top: 1.8rem;
+    padding: 1rem 2.5rem;
+    display: flex;
+    align-items: center;
+    color: var(--bg1);
+    font-family: 'ubuntu-reg';
+    border-radius: 3rem;
+}
+
+.bio-btn > span{
+    margin-right: 1.5rem;
+}
+
+.home-description-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-description{
+    max-width: 46rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.html-tags{
+    font-family: 'IBM-reg';
+    color: var(--brand2);
+    font-size: 1.2rem;
+}
+
+.home-description-title{
+    font-family: 'ubuntu-reg';
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    font-size: 3.8rem;
+}
+
+.home-description-title > span {
+    color: var(--brand1);
+}
+
+.description-text{
+    font-family: 'IBM-reg';
+    font-size: 1.2rem;
+    color: var(--white);
+    padding: 1rem 1.5rem;
+}
+
+.home-contact-link{
+    color: var(--brand1);
+    font-family: 'IBM-med';
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: flex;
+}
+
+.home-contact-link-svg-box{
+    background-color: var(--grey);
+    width: 2.7rem;
+    height: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-left: 1rem;
+}
+
+.experiences-box-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.experiences-box-ul{
+    list-style: none;
+    background-color: var(--bg2);
+    padding: 4rem 2rem;
+    width: fit-content;
+    height: 28rem;
+    color: var(--white);
+    border-radius: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.experiences-box-ul > li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.experiences-box-ul > li > span{
+    font-family: 'IBM-med';
+    color: var(--brand1);
+    font-size: 3.2rem;
+}
+
+.experiences-box-ul > li > p{
+    max-width: 10rem;
+    font-family: 'IBM-reg';
+    font-size: 1.2rem;
+}
