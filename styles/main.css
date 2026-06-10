@@ -1,7 +1,10 @@
 :root {
     --bg1: #292F36;
+    --bg1-hover: #323A43;
     --bg2: #1A1E23;
+    --bg2-hover: #1F242B;
     --brand1: #12F7D6;
+    --brand1-hover: #0BC7AC;
     --brand2: #98FAEC;
     --grey: #43454D;
     --white: #FFFFFF;
@@ -9,6 +12,8 @@
     --css: #0C73B8;
     --js: #E7A020;
     --react: #28A9E0;
+    --tailwind: #38BDF8;
+    --git: #F05033;
 }
 
 * {
@@ -29,6 +34,10 @@ body{
 
 /*-------------------------------Components-------------------------------*/
 
+.container{
+    width: 80%;
+}
+
 .html-tags{
     font-family: 'IBM-reg';
     color: var(--brand2);
@@ -39,7 +48,45 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
+}
+
+.title-underline-module{
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-underline-content{
+    position: relative;
+    width: 12rem;
+    height: 0.2rem;
+    background-color: var(--brand1);
+}
+
+.title-underline-content::before,
+.title-underline-content::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: var(--brand1);
+    border-radius: 50%;
+}
+
+.title-underline-content::before{
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-underline-content::after{
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
 }
 
 /*-------------------------------FIXED MENU-------------------------------*/
@@ -94,10 +141,6 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.container{
-    width: 80%;
 }
 
 .nav-bar{
@@ -181,6 +224,10 @@ header{
     align-items: center;
 }
 
+.nav-links > li > a > span{
+    transition: all 200ms ease-in-out 50ms;
+}
+
 .nav-instagram-logo,
 .nav-linkedin-logo,
 .nav-github-logo{
@@ -236,7 +283,7 @@ header{
     flex-direction: column;
     align-items: center;
     width: 26rem;
-    height: 42rem;
+    height: 43rem;
     border: 3px solid var(--white);
     border-top-left-radius: 11rem;
     border-bottom-right-radius: 11rem;
@@ -352,6 +399,11 @@ header{
     display: flex;
 }
 
+.home-contact-link:hover{
+    transform:translateY(-2px);
+    text-shadow:0 10px 25px rgba(18,247,214,.25);
+}
+
 .home-contact-link-svg-box{
     background-color: var(--grey);
     width: 2.7rem;
@@ -407,7 +459,6 @@ header{
 .about-me{
     display: flex;
     justify-content: center;
-    background-color: var(--bg2);
     padding: 8rem 0;
     background:linear-gradient(rgba(24,24,36,.8), rgba(24,24,36,.8)),url(../images/about-me-bg.png);
 }
@@ -464,4 +515,444 @@ header{
 
 .about-me-img-wrapper > img{
     width: 34rem;
+}
+
+
+/*-------------------------------SKILLS-------------------------------*/
+
+.skills{
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0;
+    background:linear-gradient(rgba(25, 35, 50, .8), rgba(25, 35, 50, .8)),url(../images/skills-bg.png);
+}
+
+.skills-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'ubuntu-reg';
+    color: var(--brand1);
+    font-size: 3.8rem;
+    font-weight: 100;
+}
+
+.skills-description{
+    font-family: 'IBM-reg';
+    color: var(--white);
+}
+
+.skills-content{
+    width: 80rem;
+    height: 40rem;
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: stretch;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.skill-box{
+    width: 32%;
+    height: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.skill-circle{
+    width: 10rem;
+    height: 10rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.skill-name{
+    font-family: 'IBM-med';
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.skill-box:nth-child(1) > .skill-name{
+    color: var(--html);
+}
+
+.skill-box:nth-child(2) > .skill-name{
+    color: var(--css);
+}
+
+.skill-box:nth-child(3) > .skill-name{
+    color: var(--js);
+}
+
+.skill-box:nth-child(4) > .skill-name{
+    color: var(--react);
+}
+
+.skill-box:nth-child(5) > .skill-name{
+    color: var(--tailwind);
+}
+
+.skill-box:nth-child(6) > .skill-name{
+    color: var(--git);
+}
+
+
+/*-------------------------------WORKS-------------------------------*/
+
+.works{
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0;
+    background:linear-gradient(rgba(25, 35, 50, .8), rgba(25, 35, 50, .8)),url(../images/works-bg.png);
+}
+
+.works-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.works-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'ubuntu-reg';
+    color: var(--brand1);
+    font-size: 3.8rem;
+    font-weight: 100;
+}
+
+.works-description{
+    font-family: 'IBM-reg';
+    color: var(--white);
+}
+
+.works-content{
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.prev-btn,.next-btn{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg2);
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.prev-btn:hover,
+.next-btn:hover{
+    background: var(--bg2-hover);
+    transform:translateY(-2px);
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
+}
+
+.project{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 40rem;
+}
+
+.project > img{
+    width: 100%;
+}
+
+.project-description{
+    max-width: 100%;
+    color: var(--white);
+    text-align: center;
+    font-family: 'ubuntu-reg';
+}
+
+/*-------------------------------BLOGS-------------------------------*/
+
+.blogs{
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0;
+    background:linear-gradient(rgba(25, 35, 50, .8), rgba(25, 35, 50, .8)),url(../images/blog-bg.png);
+}
+
+.blogs-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogs-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'ubuntu-reg';
+    color: var(--brand1);
+    font-size: 3.8rem;
+    font-weight: 100;
+}
+
+.blogs-description{
+    font-family: 'IBM-reg';
+    color: var(--white);
+}
+
+.blog-box{
+    margin-top: 5rem;
+    display: flex;
+    width: 90rem;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+}
+
+.blog-box > img{
+    width: 24rem;
+    object-fit: contain;
+}
+
+.blog-content{
+    width: 55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+
+.blog-content-title{
+    font-family: 'ubuntu-reg';
+    font-size: 24px;
+    font-weight: 100;
+    color: var(--brand1);
+}
+
+.blog-content-text{
+    font-family: 'ubuntu-light';
+    color: var(--white);
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4em;
+}
+
+.blog-readmore{
+    text-decoration: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.blog-readmore > p{
+    border-bottom: 1px solid var(--white);
+}
+
+.blog-readmore > p,
+.blog-readmore > span{
+    font-family: 'ubuntu-light';
+    color: var(--brand1);
+    padding: .5rem 0;
+    width: fit-content;
+}
+
+.blog-info{
+    list-style: none;
+    font-family: 'IBM-med';
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-info > li{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.blog-info > li > span{
+    font-family: 'ubuntu-light';
+    font-size: 1.4rem;
+}
+
+.blogs-btns{
+    display: flex;
+    gap: 3rem;
+    margin-top: 6rem;
+}
+
+.vm-btn,
+.sub-btn{
+    font-family: 'ubuntu-reg';
+    color: var(--bg1);
+    background-color: var(--brand1);
+    padding: 1rem 2.5rem;
+    border-radius: 6rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.vm-btn:hover{
+    background: var(--brand1-hover);
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(18,247,214,.15);
+}
+
+.sub-btn{
+    color: var(--white);
+    background-color: var(--bg1);
+    border: 2px solid var(--brand1);
+}
+
+.sub-btn:hover{
+    background: var(--bg1-hover);
+    transform:translateY(-2px);
+    box-shadow: 0 10px 25px rgba(50, 58, 67, 0.35);
+}
+
+/*-------------------------------CONTACT-------------------------------*/
+
+.contact{
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0;
+    background:linear-gradient(rgba(24,24,36,.8), rgba(24,24,36,.8)),url(../images/contact-bg.png);
+}
+
+.contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'ubuntu-reg';
+    color: var(--brand1);
+    font-size: 3.8rem;
+    font-weight: 100;
+}
+
+.contact-description{
+    font-family: 'IBM-reg';
+    color: var(--white);
+}
+
+.contact-content{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-content > h2{
+    font-family: 'IBM-med';
+    color: var(--brand1);
+    font-weight: 100;
+    border: 2px solid var(--brand1);
+    padding: 1.2rem 3rem;
+    border-top-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+
+.contact-form{
+    font-family: 'ubuntu-light';
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form > input{
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid var(--brand2);
+    color: var(--white);
+}
+
+.contact-form > input::placeholder{
+    color: var(--white);
+    font-weight: 100;
+}
+
+.contact-form > input:focus{
+    outline: none;
+}
+
+.contact-form > input:focus::placeholder{
+    opacity: 0.3;
+}
+
+.contact-form > label{
+    width: 100%;
+    color: var(--brand1);
+}
+
+.contact-form > textarea{
+    width: 100%;
+    height: 20rem;
+    background-color: var(--bg1);
+    border: none;
+    outline: none;
+    padding: 1rem;
+    color: var(--white);
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-form > textarea:focus::placeholder{
+    opacity: 0.3;
+}
+
+.contact-form > textarea::placeholder{
+    color: var(--white);
+}
+
+.contact-form > button{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    background-color: var(--brand1);
+    color: var(--bg1);
+    width: fit-content;
+    padding: 1.5rem 2.5rem;
+    border-radius: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    font-family: 'ubuntu-reg';
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    border: none;
+}
+
+.contact-form > button:hover{
+    background: var(--brand1-hover);
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(18,247,214,.15);
 }

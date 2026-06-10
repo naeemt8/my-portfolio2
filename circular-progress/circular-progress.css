@@ -1,0 +1,25 @@
+.bg{
+    fill:none;
+    stroke:#1A1E23;
+    stroke-width:10;
+}
+
+.progress{
+    fill:none;
+    stroke:orange;
+    stroke-width:10;
+    stroke-linecap:round;
+
+    stroke-dasharray:314;
+    stroke-dashoffset:47;
+    
+    transform: rotate(-90deg);
+    transform-origin:center;
+}
+
+.percent{
+    font-size: 28px;
+    fill: #fff;
+    font-weight: bold;
+    font-family: 'ubuntu-med'; /* you should add this font family in the main css */
+}
