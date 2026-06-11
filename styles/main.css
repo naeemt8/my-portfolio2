@@ -1,7 +1,7 @@
 :root {
     --bg1: #292F36;
     --bg1-hover: #323A43;
-    --bg2: #1A1E23;
+    --bg2: #12161A;
     --bg2-hover: #1F242B;
     --brand1: #12F7D6;
     --brand1-hover: #0BC7AC;
@@ -131,7 +131,7 @@ body{
 }
 
 .fixed-menu-li:hover > svg > path{
-    fill: var(--bg1);
+    fill: var(--bg2);
 }
 
 
@@ -955,4 +955,72 @@ header{
     background: var(--brand1-hover);
     transform:translateY(-2px);
     box-shadow:0 10px 25px rgba(18,247,214,.15);
+}
+
+
+/*-------------------------------FOOTER-------------------------------*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg1);
+}
+
+.footer-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+}
+
+.footer-copyright{
+    display: flex;
+    align-items: center;
+    font-family: 'ubuntu-light';
+    color: var(--white);
+}
+
+.footer-links{
+    width: 15rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links > li{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand2);
+    transition: all 200ms ease-in-out;
+}
+
+.footer-links > li:hover {
+  background: #7EF5E3;
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 20px rgba(152, 250, 236, 0.35),
+    0 0 10px rgba(152, 250, 236, 0.5);
+}
+
+.footer-links > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links > li > a > svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer-links > li > a > path,
+.footer-links > li > a > svg > path{
+    fill: var(--bg1) !important;
 }
