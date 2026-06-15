@@ -1,0 +1,300 @@
+@media screen and (max-width: 1536px){
+    
+}
+@media screen and (max-width: 1366px){
+    .fixed-menu{
+        left: 2rem;
+    }
+    .blog-box{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .container{
+        width: 85%;
+    }
+    .home-description-title{
+        font-size: 3.4rem;
+    }
+    .blog-box{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 992px){
+    .fixed-menu{
+        display: none;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-menu{
+        justify-content: end;
+    }
+    .home-content{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .bio-box-wrapper{
+        grid-column: 1 / 3;
+    }
+    .about-me-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me-img-wrapper > img{
+        width: 30rem;
+    }
+    .works-content{
+        width: 100%;
+    }
+    .blog-box{
+        padding: 3rem 1rem;
+    }
+    .blog-box > img{
+        width: 16rem;
+    }
+    .blog-content {
+        gap: 1.5rem;
+    }
+    .blog-content-text{
+        font-size: 1.4rem;
+    }
+    .blog-readmore > p, .blog-readmore > span{
+        font-size: 1.4rem;
+    }
+    .blog-info > li{
+        font-size: 1.4rem;
+        gap: 0.1rem;
+    }
+    .blog-info > li > span{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .scroll-module{
+        margin-bottom: 3rem;
+    }
+    .container{
+        width: 90%;
+    }
+    .home,
+    .about-me,
+    .skills,
+    .works,
+    .blogs,
+    .contact{
+        padding: 4rem 0;
+    }
+    .home-title{
+        font-size: 4.4rem;
+    }
+    .home-content{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 1.5fr 1fr;
+    }
+    .bio-box-wrapper{
+        grid-column: auto;
+    }
+    .about-me-wrapper{
+        gap: 5rem;
+    }
+    .skills-description,
+    .works-description,
+    .blogs-description,
+    .contact-description{
+        font-size: 1.4rem;
+    }
+    .skills-content{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .project{
+        width: 30rem;
+    }
+    .project-description{
+        font-size: 1.4rem;
+    }
+    .prev-btn, .next-btn{
+        width: 5rem;
+        height: 5rem;
+    }
+    .prev-btn > svg, .next-btn > svg{
+        width: 3rem;
+        height: 3rem;
+    }
+    .blog-box{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .blog-content{
+        width: 100%;
+    }
+    .footer-copyright{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 580px){
+    .container{
+        width: 95%;
+    }
+    .nav-logoname{
+        flex: 2;
+    }
+    .home-title {
+        font-size: 3.8rem;
+    }
+    .home-description-title{
+        font-size: 3rem;
+    }
+    .experiences-box-ul > li > p{
+        font-size: 1rem;
+    }
+    .experiences-box-ul > li > span{
+        font-size: 2.6rem;
+    }
+    .about-me-content-title{
+        font-size: 1.8rem;
+    }
+    .about-me-content-description > p{
+        font-size: 1.2rem;
+    }
+    .about-me-content-description > h3{
+        font-size: 1.6rem;
+    }
+    .skills-description,
+    .works-description,
+    .blogs-description,
+    .contact-description{
+        font-size: 1.2rem;
+    }
+
+    .skills-title,
+    .works-title,
+    .blogs-title,
+    .contact-title{
+        font-size: 2.8rem;
+    }
+    .blog-info > li{
+        font-size: 1.2rem;
+    }
+    .blog-info > li > span{
+        font-size: 1rem;
+    }
+    .contact-content > h2{
+        font-size: 2rem;
+    }
+    .contact-form{
+        width: 90%;
+    }
+    .contact-form > label{
+        font-size: 1.4rem;
+    }
+    .contact-form > input{
+        font-size: 1.2rem;
+    }
+    .contact-form > textarea{
+        font-size: 1.2rem;
+    }
+    .contact-form > button{
+        font-size: 1.6rem;
+        gap: 0.6rem;
+        padding: 1rem 1.8rem;
+    }
+    .contact-form > button > svg{
+        width: 1.8rem;
+    }
+    .footer-wrapper{
+        padding: 2rem 0rem;
+    }
+    .footer-links{
+        width: 12rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .home, .about-me, .skills, .works, .blogs, .contact {
+        padding: 2rem 0;
+    }
+    .logo-icon{
+        font-size: 1.6rem;
+    }
+    .logo-text{
+        font-size: 1.4rem;
+    }
+    .nav-menu > :first-child{
+        margin-right: 0.8rem;
+    }
+    .nav-menu > li > a{
+        font-size: 1.4rem;
+    }
+    .home-title{
+        font-size: 2.8rem;
+    }
+    .home-description-title{
+        font-size: 2.4rem;
+    }
+    .about-me-content-title{
+        font-size: 1.6rem;
+        padding: 1.2rem 2rem;
+    }
+    .about-me-img-wrapper > img{
+        width: 24rem;
+    }
+    .skills-content {
+        /* grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr); */
+        grid-row-gap: 2rem;
+    }
+    .skill-box{
+        gap: 0;
+    }
+    .project{
+        width: 20rem;
+    }
+    .prev-btn, .next-btn{
+        width: 3rem;
+        height: 3rem;
+    }
+    .prev-btn > svg, .next-btn > svg {
+        width: 2rem;
+        height: 2rem;
+    }
+    .project-description {
+        font-size: 1.2rem;
+    }
+    .blog-content{
+        padding-right: 0;
+    }
+    .blog-content-title{
+        font-size: 1.8rem;
+    }
+    .blog-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .blog-info > li{
+        display: flex;
+    }
+    .blog-info > li:nth-child(2),
+    .blog-info > li:nth-child(4){
+        justify-content: center;
+    }
+    .blogs-btns {
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+    .contact-content > h2 {
+        font-size: 1.8rem;
+        padding: 0.8rem 2rem;
+    }
+    .contact-form > button{
+        margin-top: 2rem;
+    }
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
