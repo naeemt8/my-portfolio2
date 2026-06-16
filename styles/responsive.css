@@ -248,6 +248,12 @@
     .skill-box{
         gap: 0;
     }
+    .cicular-progress{
+        height: 100px;
+    }
+    .skill-name{
+        font-size: 1.8rem;
+    }
     .project{
         width: 20rem;
     }
@@ -298,3 +304,5 @@
         gap: 1.5rem;
     }
 }
+
+

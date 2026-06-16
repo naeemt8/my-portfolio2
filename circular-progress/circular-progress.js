@@ -1,7 +1,7 @@
 const template = document.createElement('template')
 template.innerHTML = `
 <link rel="stylesheet" href="circular-progress/circular-progress.css">
-<svg width="120" height="120">
+<svg viewBox="0 0 120 120">
     <circle class="bg" cx="60" cy="60" r="50"></circle>
     <circle class="progress" cx="60" cy="60" r="50"></circle>
     <text x="60" y="63" text-anchor="middle" dominant-baseline="middle" class="percent">80%</text>

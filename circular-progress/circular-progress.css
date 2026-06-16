@@ -23,3 +23,18 @@
     font-weight: bold;
     font-family: 'ubuntu-med'; /* you should add this font family in the main css */
 }
+
+svg{
+    width: 120px;
+    height: 120px;
+}
+
+@media screen and (max-width: 480px){
+    svg{
+        width: 100px;
+        height: 100px;
+    }
+    .percent{
+        font-size: 24px;
+    }
+}
