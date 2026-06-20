@@ -109,7 +109,10 @@
         grid-template-rows: 1fr 1fr 1fr;
     }
     .project{
-        width: 30rem;
+        width: 34rem;
+    }
+    .project > img{
+        height: 16rem;
     }
     .project-description{
         font-size: 1.4rem;
@@ -255,7 +258,12 @@
         font-size: 1.8rem;
     }
     .project{
-        width: 20rem;
+        width: 24rem;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .project > img{
+        height: 12rem;
     }
     .prev-btn, .next-btn{
         width: 3rem;
@@ -305,4 +313,11 @@
     }
 }
 
-
+@media screen and (max-width: 360px){
+    .project{
+        width: 20rem;
+    }
+    .project > img{
+        height: 10rem;
+    }
+}
