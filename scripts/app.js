@@ -5,10 +5,8 @@ const projectImg = document.getElementById('projectImg');
 const projectText = document.getElementById('projectText');
 
 const projectsList = [
-    {imgSrc: 'images/weather-project.png',text: '1', hrefLink: '#1'},
-    {imgSrc: 'images/dictionary-project.png',text: '2', hrefLink: '#2'},
-    {imgSrc: 'images/3.png',text: '3', hrefLink: '#3'},
-    {imgSrc: 'images/4.png',text: '4', hrefLink: '#4'}
+    {imgSrc: 'images/weather-project.png',text: 'A weather app fetching real-time data through external APIs', hrefLink: '#'},
+    {imgSrc: 'images/dictionary-project.png',text: 'A dictionary app using API integration to provide word meanings', hrefLink: '#'}
 ];
 
 let currentProject = 0;

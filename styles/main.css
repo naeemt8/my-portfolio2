@@ -700,6 +700,7 @@ header{
     color: var(--white);
     text-align: center;
     font-family: 'ubuntu-reg';
+    font-size: 1.4rem;
 }
 
 /*-------------------------------BLOGS-------------------------------*/
@@ -812,14 +813,7 @@ header{
     font-size: 1.4rem;
 }
 
-.blogs-btns{
-    display: flex;
-    gap: 3rem;
-    margin-top: 6rem;
-}
-
-.vm-btn,
-.sub-btn{
+.vm-btn{
     font-family: 'ubuntu-reg';
     color: var(--bg1);
     background-color: var(--brand1);
@@ -827,24 +821,13 @@ header{
     border-radius: 6rem;
     cursor: pointer;
     transition: all 200ms ease-in-out;
+    margin-top: 6rem;
 }
 
 .vm-btn:hover{
     background: var(--brand1-hover);
     transform:translateY(-2px);
     box-shadow:0 10px 25px rgba(18,247,214,.15);
-}
-
-.sub-btn{
-    color: var(--white);
-    background-color: var(--bg1);
-    border: 2px solid var(--brand1);
-}
-
-.sub-btn:hover{
-    background: var(--bg1-hover);
-    transform:translateY(-2px);
-    box-shadow: 0 10px 25px rgba(50, 58, 67, 0.35);
 }
 
 /*-------------------------------CONTACT-------------------------------*/
