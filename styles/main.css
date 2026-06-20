@@ -120,6 +120,7 @@ body{
     justify-content: center;
     align-items: center;
     transition: all 200ms ease-in-out;
+    cursor: pointer;
 }
 
 .fixed-menu-li > svg > path{
