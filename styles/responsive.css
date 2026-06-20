@@ -1,6 +1,3 @@
-@media screen and (max-width: 1536px){
-    
-}
 @media screen and (max-width: 1366px){
     .fixed-menu{
         left: 2rem;
@@ -9,6 +6,12 @@
         width: 90%;
     }
 }
+
+
+/*---------------------------------------------------------------*/
+
+
+
 @media screen and (max-width: 1200px){
     .container{
         width: 85%;
@@ -20,6 +23,12 @@
         width: 100%;
     }
 }
+
+
+/*---------------------------------------------------------------*/
+
+
+
 @media screen and (max-width: 992px){
     .fixed-menu{
         display: none;
@@ -70,6 +79,12 @@
         font-size: 1.2rem;
     }
 }
+
+
+/*---------------------------------------------------------------*/
+
+
+
 @media screen and (max-width: 768px){
     .scroll-module{
         margin-bottom: 3rem;
@@ -137,6 +152,12 @@
         font-size: 1.4rem;
     }
 }
+
+
+/*---------------------------------------------------------------*/
+
+
+
 @media screen and (max-width: 580px){
     .container{
         width: 95%;
@@ -214,6 +235,11 @@
         width: 12rem;
     }
 }
+
+
+/*---------------------------------------------------------------*/
+
+
 @media screen and (max-width: 480px){
     .home, .about-me, .skills, .works, .blogs, .contact {
         padding: 2rem 0;
@@ -311,7 +337,12 @@
         align-items: center;
         gap: 1.5rem;
     }
+    .footer-links{
+        width: 15rem;
+    }
 }
+
+/*---------------------------------------------------------------*/
 
 @media screen and (max-width: 360px){
     .project{
