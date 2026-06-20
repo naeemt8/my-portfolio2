@@ -24,6 +24,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -123,7 +124,15 @@ body{
     cursor: pointer;
 }
 
-.fixed-menu-li > svg > path{
+.fixed-menu-li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed-menu-li > a > svg > path{
     transition: all 200ms ease-in-out;   
 }
 
@@ -131,7 +140,7 @@ body{
     background-color: var(--white);
 }
 
-.fixed-menu-li:hover > svg > path{
+.fixed-menu-li:hover > a > svg > path{
     fill: var(--bg2);
 }
 
