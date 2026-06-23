@@ -1,4 +1,6 @@
 const template = document.createElement('template')
+
+// ----------------------module style link-------------------------
 template.innerHTML = `
 <link rel="stylesheet" href="circular-progress/circular-progress.css">
 <svg viewBox="0 0 120 120">

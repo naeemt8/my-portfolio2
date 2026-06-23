@@ -64,6 +64,7 @@ function showPervproject(){
     project.classList.add('animate-perv');
 }
 
+// -------------------------module script link------------------------------
 
 import { CircularProgress } from "../circular-progress/circular-progress.js";
 
