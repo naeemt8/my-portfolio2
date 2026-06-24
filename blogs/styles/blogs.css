@@ -1,0 +1,492 @@
+:root {
+    --bg1: #292F36;
+    --bg1-hover: #323A43;
+    --bg2: #12161A;
+    --bg2-hover: #1F242B;
+    --brand1: #12F7D6;
+    --brand1-hover: #0BC7AC;
+    --brand2: #98FAEC;
+    --grey: #43454D;
+    --white: #FFFFFF;
+    --html: #E54F26;
+    --css: #0C73B8;
+    --js: #E7A020;
+    --react: #28A9E0;
+    --tailwind: #38BDF8;
+    --git: #F05033;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: var(--bg2);
+}
+
+
+/*-------------------------------Components-------------------------------*/
+
+.container{
+    width: 80%;
+}
+
+.title-underline-module{
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-underline-content{
+    position: relative;
+    width: 12rem;
+    height: 0.2rem;
+    background-color: var(--brand1);
+}
+
+.title-underline-content::before,
+.title-underline-content::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: var(--brand1);
+    border-radius: 50%;
+}
+
+.title-underline-content::before{
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-underline-content::after{
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+/*-------------------------------HEADER-------------------------------*/
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar{
+    display: flex;
+    height: 8rem;
+}
+
+.nav-bar > *{
+    flex: 1;
+}
+
+.nav-logoname{
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon{
+    font-family: "IBM-med";
+    font-size: 2.6rem;
+    color: var(--brand1);
+}
+
+.logo-text{
+    font-family: 'IBM-med';
+    margin-left: 0.5rem;
+    color: var(--white);
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-menu > :first-child{
+    margin-right: 2rem;
+}
+
+.nav-menu > li{
+    color: var(--white);
+    font-family: 'IBM-reg';
+}
+
+.nav-menu > li > a:hover{
+    color: var(--brand1);
+}
+
+.nav-menu > li > a{
+    text-decoration: none;
+    color: inherit;
+    transition: all 200ms ease-in-out 50ms;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-links > li{
+    color: var(--white);
+    font-family: 'IBM-reg';
+    font-size: 1.2rem;
+}
+
+.nav-links > li:hover > a > span{
+    color: var(--brand1);
+}
+
+.nav-links > :nth-child(1),
+.nav-links > :nth-child(2){
+    margin-right: 1rem;
+}
+
+.nav-links > li > a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links > li > a > span{
+    transition: all 200ms ease-in-out 50ms;
+}
+
+.nav-instagram-logo,
+.nav-linkedin-logo,
+.nav-github-logo{
+    margin-right: 0.3rem;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separator-line{
+    background-color: var(--grey);
+    width: 100%;
+    height: 1px;
+}
+
+
+/*-------------------------------Blogs-------------------------------*/
+
+.blogs{
+    display: flex;
+    justify-content: center;
+}
+
+.blogs-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogs-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'ubuntu-reg';
+    color: var(--brand1);
+    font-size: 3.8rem;
+    font-weight: 100;
+    margin-top: 8rem;
+}
+
+.blogs-description{
+    font-family: 'IBM-reg';
+    color: var(--white);
+    text-align: center;
+}
+
+.blog-box{
+    margin-top: 5rem;
+    display: flex;
+    width: 94rem;
+    justify-content: space-between;
+    padding: 5rem 2rem 0;
+    border-top: 1px solid var(--white);
+    /* border-bottom: 1px solid var(--white); */
+}
+
+.blog-box:last-child{
+    padding: 5rem 2rem;
+    border-bottom: 1px solid var(--white);
+}
+
+.blog-box > img{
+    width: 24rem;
+    object-fit: contain;
+    border-radius: 1.5rem;
+    box-shadow:
+    0 15px 50px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255,255,255,0.05);
+}
+
+.blog-content{
+    width: 55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+
+.blog-content-title{
+    font-family: 'ubuntu-reg';
+    font-size: 2.4rem;
+    font-weight: 100;
+    color: var(--brand1);
+}
+
+.blog-content-text{
+    font-family: 'ubuntu-light';
+    color: var(--white);
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4em;
+}
+
+.blog-readmore{
+    text-decoration: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.blog-readmore > p{
+    border-bottom: 1px solid var(--white);
+}
+
+.blog-readmore > p,
+.blog-readmore > span{
+    font-family: 'ubuntu-light';
+    color: var(--brand1);
+    padding: .5rem 0;
+    width: fit-content;
+}
+
+.blog-info{
+    list-style: none;
+    font-family: 'IBM-med';
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-info > li{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.blog-info > li > span{
+    font-family: 'ubuntu-light';
+    font-size: 1.4rem;
+}
+
+
+/*-------------------------------FOOTER-------------------------------*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg1);
+    margin-top: 10rem;
+}
+
+.footer-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+
+.footer-copyright{
+    display: flex;
+    align-items: center;
+    font-family: 'ubuntu-light';
+    color: var(--white);
+}
+
+.footer-links{
+    width: 15rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links > li{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand2);
+    transition: all 200ms ease-in-out;
+}
+
+.footer-links > li:hover {
+  background: #7EF5E3;
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 20px rgba(152, 250, 236, 0.35),
+    0 0 10px rgba(152, 250, 236, 0.5);
+}
+
+.footer-links > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links > li > a > svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer-links > li > a > path,
+.footer-links > li > a > svg > path{
+    fill: var(--bg1) !important;
+}
+
+/*-------------------------------Responsive-------------------------------*/
+
+@media screen and (max-width: 1200px) {
+    .blog-box{
+        max-width: 84rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .blog-box{
+        max-width: 68rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .blog-content{
+        width: 100%;
+        padding: 0;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-menu{
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+    .blog-box{
+        max-width: 54rem;
+    }
+    .footer-links{
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .nav-logoname {
+        flex: 2;
+    }
+    .blogs-title{
+        font-size: 2.8rem;
+    }
+    .blogs-description{
+        font-size: 1.2rem;
+    }
+    .blog-box{
+        max-width: 42rem;
+    }
+    .blog-content-title{
+        font-size: 1.6rem;
+    }
+    .blog-content-text{
+        font-size: 1.4rem;
+    }
+    .blog-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .blog-info > li:nth-child(2),
+    .blog-info > li:nth-child(4){
+        display: flex;
+        justify-content: center;
+    }
+    .footer-wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+    .footer-links{
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .blog-box{
+        max-width: 30rem;
+    }
+    .blog-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-info > li:nth-child(2),
+    .blog-info > li:nth-child(4){
+        display: flex;
+        justify-content: start;
+    }
+    .nav-logoname{
+        font-size: 1.2rem;
+    }
+    .nav-menu{
+        font-size: 1.2rem;
+    }
+    .nav-menu > :first-child {
+        margin-right: 0.5rem;
+    }
+    .footer-wrapper{
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .blog-box{
+        max-width: 26rem;
+    }
+    .nav-bar{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+}
