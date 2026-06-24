@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="styles/weather.css"/>
+  <link rel="stylesheet" href="ce-clock-box/clock-box.css">
+</head>
+<body>
+  <clock-box class="clock-box"></clock-box>
+  <div class="app-wrap">
+    <header>
+      <div class="input-wrapper">
+        <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+        <button class="search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="data">
+        <section class="location">
+          <div class="city"></div>
+          <div class="date"></div>
+        </section>
+        <div class="current">
+          <div class="temp"><span></span></div>
+          <div class="weather"></div>
+          <div class="hi-low"></div>
+        </div>
+      </div>
+      <p class="error-text">Could not establish connection to the weather service.</p>
+    </main>
+  </div>
+  <script type="module" src="scripts/weather.js"></script>
+</body>
+</html>

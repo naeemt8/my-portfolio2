@@ -1,0 +1,108 @@
+:root{
+    --p-color: #667eea;
+    --s-color: #764ba2;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg, var(--p-color), var(--s-color));
+}
+
+.container{
+    width:500px;
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    margin-bottom:15px;
+    outline:none;
+    transition:.3s;
+}
+
+input:focus{
+    border-color: var(--p-color);
+}
+
+.search-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background: var(--p-color);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-btn:hover{
+    background:#5568d8;
+}
+
+#result{
+    margin-top:25px;
+    padding-top:20px;
+    border-top:1px solid #eee;
+    position: relative;
+}
+
+#result h2{
+    color: var(--p-color);
+    margin-bottom:10px;
+}
+
+#result p{
+    margin-bottom:8px;
+    color:#444;
+    line-height:1.6;
+}
+
+.audio-btn{
+    width: 35px;
+    height: 35px;
+    background-color: var(--p-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:580px) {
+    .container{
+        width: 80%;
+    }
+}
+@media screen and (max-width:420px) {
+    .container{
+        width: 90%;
+    }
+}
