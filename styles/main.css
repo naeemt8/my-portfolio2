@@ -364,6 +364,14 @@ header{
     color: var(--bg1);
     font-family: 'ubuntu-reg';
     border-radius: 3rem;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+
+.bio-btn:hover{
+    background-color: #f2f2f2;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
 }
 
 .bio-btn > span{
